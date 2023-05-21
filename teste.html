@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="es">A</div>
+    <div class="es">B</div>
+    <div class="es">C</div>
+    <script>
+
+        const AB = document.querySelectorAll('.es')
+        AB.forEach( (Div) => {
+            Div.addEventListener('mouseenter', function passar(){
+                Div.style.backgroundColor = 'blue'
+            })
+        })
+        
+    </script>
+    
+</body>
+</html>
