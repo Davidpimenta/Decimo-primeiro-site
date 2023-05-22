@@ -138,10 +138,10 @@ button{
 #button{
     position: absolute;
     top: 50%;
-    left: 98%;
-    transform: translate(-98%);
+    left: 97%;
+    transform: translate(-97%);
     height: 90px;
-    width: 130px;
+    width: 145px;
 
 }
 
@@ -151,5 +151,8 @@ button:hover{
     cursor: pointer;
 }
 
+#recomeçar{
+    display: none;
+}
 
 /*JANELA*/
