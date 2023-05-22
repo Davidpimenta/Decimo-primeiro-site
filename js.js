@@ -44,10 +44,6 @@ function recomeço(){
     })
 }
 
-
-
-    
-
 function começou(){
     vez_do_jogador.style.display = 'inline-block'
     começar.style.display = 'none'
@@ -249,8 +245,8 @@ function começou(){
                     }
                     dice.push(indice)
                     ganhar()
-                    if(dice.length == 9){
-                    
+                    if(dice.length == 9 && partida == true){
+                        vez_do_jogador.innerText = 'O jogo empatou'
                     } 
                 }
             }
