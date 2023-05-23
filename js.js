@@ -17,6 +17,7 @@ var partida = true
 let posibilidades = [topo, meio, baixo] 
 var ganhoux = true
 var ganhouy = true
+var jogador_ganhou = document.getElementById('jogador_ganhou')
 var janela = document.getElementById('janela')
 var começar = document.getElementById('começar')
 começar.addEventListener('click', começou)
@@ -33,7 +34,7 @@ function recomeço(){
     coluna_B = []
     coluna_C = []
     partida = true
-    vez_do_jogador.innerText = 'Vez do jogador X'
+    jogador_ganhou.style.display = 'none'    
     jg = true
     rec = true
     peça.forEach((pec) =>{
@@ -246,7 +247,17 @@ function começou(){
                     dice.push(indice)
                     ganhar()
                     if(dice.length == 9 && partida == true){
-                        vez_do_jogador.innerText = 'O jogo empatou'
+                        jogador_ganhou.style.display = 'inline-block'
+                        jogador_ganhou.style.position = 'absolute'
+                        jogador_ganhou.style.top = '50%'
+                        jogador_ganhou.style.left = '50%'
+                        jogador_ganhou.style.transform = 'translate(-50%,-50%)'
+                        jogador_ganhou.style.fontSize = '3em'
+                        jogador_ganhou.style.fontFamily = 'Arial, Helvetica, sans-serif'
+                        jogador_ganhou.style.color = 'red'
+                        jogador_ganhou.style.transitionDuration = '1s'
+                        jogador_ganhou.innerText = 'Empate!'
+                        partida = false
                     } 
                 }
             }
@@ -276,7 +287,8 @@ function ganhar(){
         }
         contA = 0
         if(ganhoux == true && posição.length == 3){
-            vez_do_jogador.innerText = 'Jogador X ganhou'
+            jogador_ganhou.style.display = 'inline-block'
+            jogador_ganhou.innerText = 'Jogador X Ganhou!'
             partida = false
         }
         
@@ -297,7 +309,8 @@ function ganhar(){
         }
         contA = 0
         if(ganhouy == true && posição.length == 3){
-            vez_do_jogador.innerText = 'Jogador O ganhou'
+            jogador_ganhou.style.display = 'inline-block'
+            jogador_ganhou.innerText = 'Jogador O Ganhou!'
             partida = false
         }
 
