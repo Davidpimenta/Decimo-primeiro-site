@@ -19,8 +19,10 @@
     }
 
     main{
+        padding: 10px;
         margin-top: 0%;
-        height: 65%;
+        width: 65vw;
+        height: 65vw;
 
     }
 
@@ -48,7 +50,8 @@
 
 @media screen and (max-height: 700px) {
     main{
-        height: 50%;
+        width: 25vw;
+        height: 25vw;
     }
 }
 
@@ -73,7 +76,9 @@
 
     main{
         margin-top: 0%;
-        height: 65%;
+        width: 65vw;
+        height: 65vw;
+        padding: 10px;
 
     }
 
@@ -103,18 +108,21 @@
         font-size: 1.8em;
     }
 
+    main{
+        padding: 10px;
+        width: 35vw;
+        height: 35vw;
+    }
+
     #button{
         width: 155px;
+    
 
     }
 
     #jogador{
         font-size: 1.6em;
         text-indent: 15px;
-    }
-
-    main{
-        height: 70%;
     }
 
     
