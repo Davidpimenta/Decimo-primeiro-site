@@ -128,9 +128,14 @@
     
 }
 
-@media screen and (orientation: landscape)  {
+@media screen and (orientation: landscape) {
+
     main{
-        width: 15vw;
-        height: 15vw;
+        width: 35vw;
+        height: 35vw;
+    }
+    button{
+        width: 30%;
     }
 }
+  
