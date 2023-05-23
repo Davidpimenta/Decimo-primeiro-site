@@ -143,6 +143,8 @@ button{
     transform: translate(-97%);
     height: 90px;
     width: 145px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 button:hover{
