@@ -127,3 +127,10 @@
 
     
 }
+
+@media screen and (orientation: landscape)  {
+    main{
+        width: 15vw;
+        height: 15vw;
+    }
+}
